@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>پروفایل</title>
+    <style>
+        @font-face {
+            font-family: 'Shabnam';
+            src: url('Shabnam.ttf') format('truetype');
+        }
+
+        body {
+            font-family: 'Shabnam', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            padding: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #007BFF;
+        }
+
+        .skills, .contact-form {
+            margin-top: 30px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: right;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #339CFF;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+
+        /* بخش انیمیشن */
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: #64b5f6;
+            margin: 40px auto 20px auto;
+            border-radius: 20px;
+            transition: all 0.5s ease;
+        }
+
+        .box:hover {
+            background-color: #42a5f5;
+            transform: scale(1.1);
+        }
+
+        .animated-text {
+            margin-top: 30px;
+            font-size: 30px;
+            animation: fadeIn 2s ease-in-out forwards;
+            opacity: 10;
+            font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="animated-text" style="font-size: 30px;">سلام، من محمدمهدی هستم 👋</h1>
+
+    <div class="skills">
+        <h2>🛠️ مهارت‌های من</h2>
+        <ul>
+            <li>طراحی سایت با HTML</li>
+            <li>طراحی حرفه‌ای با CSS</li>
+            <li>آشنایی با فتوشاپ و ایلاستریتور</li>
+            <li>آشنایی با پریمیر و افترافکت</li>
+            <li>آشنایی با GitHub و GateHub</li>
+        </ul>
+    </div>
+
+    <div class="contact-form">
+        <h2>📩 تماس با من</h2>
+        <form>
+            <label>نام شما:</label>
+            <input type="text" name="name" placeholder="نام کامل">
+            <label>ایمیل:</label>
+            <input type="email" name="email" placeholder="ایمیل شما">
+            <label>پیام:</label>
+            <textarea name="message" rows="5" placeholder="متن پیام شما..."></textarea>
+            <button type="submit">ارسال</button>
+        </form>
+    </div>
+
+    <a href="profile.html"><div class="box"></div></a>
+    <div class="animated-text">
+        دبیر: جناب اقای علی نژاد
+        <br>
+    طراح: محمد مهدی صاحبکاری 
+    </div>
+</body>
+</html>
